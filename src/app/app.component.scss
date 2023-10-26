@@ -1,0 +1,25 @@
+.main1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headFont {
+  font-weight: 600;
+  font-size: x-large;
+  text-align: start;
+}
+
+.span1 {
+  font-size: small;
+  margin: 2px;
+}
+
+.regionMain {
+  width: 10px;
+  height: 15px;
+  border-radius: 4px;
+}
+
