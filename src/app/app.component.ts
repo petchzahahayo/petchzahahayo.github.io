@@ -170,10 +170,6 @@ export class AppComponent {
         startYear = 1950;
       }
       this.year = startYear;
-      // Get data for the current year
-      // const currentYearData = this.data.map((item) => item[startYear]);
-
-      // console.log(currentYearData);
 
       const test1 = this.data.map((item) => ({
         startYear: item[startYear],
