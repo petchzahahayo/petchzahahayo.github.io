@@ -27,7 +27,7 @@ export class AppComponent {
   createChart(jsonData: any) {
     const ctx = document.getElementById('myChart');
     const data = [...jsonData];
-    let startYear = 1960;
+    let startYear = 1950;
     const resultArrays = data.map((item) => item[startYear]);
 
     if (ctx) {
@@ -80,8 +80,8 @@ export class AppComponent {
       setInterval(() => {
         startYear++;
   
-        if (startYear > 2017) {
-          startYear = 1960;
+        if (startYear > 2021) {
+          startYear = 1950;
         }
         this.year = startYear;
   
@@ -109,7 +109,7 @@ export class AppComponent {
   createChart2(): void {
     const ctx = document.getElementById('myChart') as HTMLCanvasElement;
     let delayed: boolean;
-    let startYear = 1960;
+    let startYear = 1950;
     this.chart = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -166,8 +166,8 @@ export class AppComponent {
     setInterval(() => {
       startYear++;
 
-      if (startYear > 2017) {
-        startYear = 1960;
+      if (startYear > 2021) {
+        startYear = 1950;
       }
       this.year = startYear;
       // Get data for the current year
